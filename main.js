@@ -1,6 +1,33 @@
 /**
- * Portfolio v3 — main.js
+ * Portfolio v4 — main.js
  */
+
+/* ── INTRO TYPEWRITER ────────────────────────────────────── */
+(function initIntro() {
+  const overlay = document.getElementById('introOverlay');
+  const typed   = document.getElementById('typedText');
+  if (!overlay || !typed) return;
+
+  const text = 'GBENGA OSUNTOYINBO';
+  let i = 0;
+
+  function typeChar() {
+    if (i < text.length) {
+      typed.textContent += text[i];
+      i++;
+      setTimeout(typeChar, 80);
+    } else {
+      // Pause then fade out
+      setTimeout(() => {
+        overlay.style.transition = 'opacity 0.7s ease';
+        overlay.style.opacity = '0';
+        setTimeout(() => { overlay.style.display = 'none'; }, 700);
+      }, 600);
+    }
+  }
+
+  setTimeout(typeChar, 400);
+})();
 
 const isMobile = window.matchMedia('(max-width:768px)').matches;
 const isTouch  = window.matchMedia('(hover:none)').matches;
