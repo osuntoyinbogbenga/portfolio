@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gbenga Osuntoyinbo — Software Engineer</title>
+  <meta name="description" content="Full-stack software engineer building scalable web and mobile experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">GO<span class="accent-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-eyebrow mono">FULL-STACK ENGINEERING &amp; SCALABLE DIGITAL SOLUTIONS</div>
+    <div class="hero-inner">
+      <h1 class="hero-heading">
+        Transforming Ideas into<br /><em>Seamless Digital Products</em>
+      </h1>
+      <p class="hero-sub">
+        Hi! I'm Gbenga, a Software Engineer &amp; Full-Stack Developer based in Chelmsford, UK.
+      </p>
+      <a href="#projects" class="btn btn-primary hero-btn">Show my work</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line-anim"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">Hi, I'm Gbenga</h2>
+      <div class="about-grid">
+        <div class="about-text" data-animate>
+          <p>
+            Motivated software engineer with hands-on experience building production web and
+            mobile applications. I bring clean architecture, security awareness, and a genuine
+            care for the end user to every project I ship.
+          </p>
+          <p>
+            My diverse skill set — spanning React, Next.js, React Native, Python, and cloud
+            deployment — enables me to deliver full-stack solutions with efficient data handling
+            and engaging user experiences. I'm excited to contribute to forward-thinking teams
+            where I can grow and help drive real impact.
+          </p>
+        </div>
+        <div class="tech-stack" data-animate>
+          <div class="stack-pill">React</div>
+          <div class="stack-pill">Next.js</div>
+          <div class="stack-pill">TypeScript</div>
+          <div class="stack-pill">Python</div>
+          <div class="stack-pill">PostgreSQL</div>
+          <div class="stack-pill">Tailwind</div>
+          <div class="stack-pill">React Native</div>
+          <div class="stack-pill">Expo</div>
+          <div class="stack-pill">Flask</div>
+          <div class="stack-pill">Prisma</div>
+          <div class="stack-pill">Git</div>
+          <div class="stack-pill">Vercel</div>
+        </div>
+      </div>
+      <p class="about-summary" data-animate>
+        I specialise in modern web and mobile technologies including Next.js, React Native,
+        TypeScript, Python/Flask, and PostgreSQL. This versatility empowers me to deliver
+        seamless solutions across the full development lifecycle — from database design to
+        polished, production-ready UIs.
+      </p>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section location-section">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-globe" data-animate>
+          <div class="globe-visual">
+            <div class="globe-ring globe-ring-1"></div>
+            <div class="globe-ring globe-ring-2"></div>
+            <div class="globe-ring globe-ring-3"></div>
+            <div class="globe-core">🌍</div>
+          </div>
+        </div>
+        <div class="location-content" data-animate>
+          <h2 class="section-title">I'm very flexible with <em>time zone communications &amp; locations.</em></h2>
+          <p>
+            I'm based in Chelmsford, UK and open to remote work opportunities worldwide.
+            I can easily adapt to different time zones and communication styles, ensuring
+            smooth collaboration regardless of your location.
+          </p>
+          <div class="timezone-tags">
+            <span>🌍 Europe / UK (GMT)</span>
+            <span>🌎 Americas Compatible</span>
+            <span>🌏 Africa / Asia Friendly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">My Selected <em>Work</em></h2>
+      <p class="section-sub">A selection of projects I've designed, built, and shipped.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 — ReplyCraft -->
+        <article class="project-card" data-animate>
+          <a href="https://replycraft.vercel.app" target="_blank" rel="noopener" class="project-link-wrap">
+            <div class="project-preview project-preview-img">
+              <img src="ReplyCraft.png" alt="ReplyCraft preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ReplyCraft</h3>
+              <p class="project-stack mono">Next.js 15, PostgreSQL, Anthropic Claude, Prisma, Tailwind CSS</p>
+              <p class="project-desc">
+                A secure, production-ready AI chat application that generates natural,
+                human-like message replies. Built with multi-tenant data isolation, JWT
+                authentication, and server-side Claude integration.
+              </p>
+              <div class="project-footer">
+                <span class="project-type mono">AI · Web App</span>
+                <span class="project-cta">View Project →</span>
+              </div>
+            </div>
+          </a>
+          <div class="project-alt-links">
+            <a href="https://github.com/osuntoyinbogbenga/ReplyCraft-" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://replycraft.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 2 — RepFlow -->
+        <article class="project-card" data-animate>
+          <a href="https://repfitflow.vercel.app" target="_blank" rel="noopener" class="project-link-wrap">
+            <div class="project-preview project-preview-img">
+              <img src="RepFlow.png" alt="RepFlow preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">RepFlow</h3>
+              <p class="project-stack mono">React Native, Expo, TypeScript, Zustand, Reanimated</p>
+              <p class="project-desc">
+                An offline-first gym planning and workout tracking app for iOS, Android, and
+                web. No account required — all data lives on-device with live timers,
+                progress charts, and full JSON export.
+              </p>
+              <div class="project-footer">
+                <span class="project-type mono">Mobile · PWA</span>
+                <span class="project-cta">View Project →</span>
+              </div>
+            </div>
+          </a>
+          <div class="project-alt-links">
+            <a href="https://github.com/osuntoyinbogbenga/RepFlow" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="https://repfitflow.vercel.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 3 — Finance Tracker -->
+        <article class="project-card" data-animate>
+          <a href="http://financeapp.pythonanywhere.com" target="_blank" rel="noopener" class="project-link-wrap">
+            <div class="project-preview project-preview-img">
+              <img src="finance.png" alt="Finance Tracker preview" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Finance Tracker</h3>
+              <p class="project-stack mono">Python, Flask, SQLite, Chart.js, Tailwind CSS</p>
+              <p class="project-desc">
+                A full-stack web application for tracking income, expenses, and budgets.
+                Features category management, real-time spending progress bars, and
+                interactive monthly trend charts.
+              </p>
+              <div class="project-footer">
+                <span class="project-type mono">Fintech · Web App</span>
+                <span class="project-cta">View Project →</span>
+              </div>
+            </div>
+          </a>
+          <div class="project-alt-links">
+            <a href="https://github.com/osuntoyinbogbenga/finance-app" target="_blank" rel="noopener" class="btn btn-outline btn-sm">GitHub</a>
+            <a href="http://financeapp.pythonanywhere.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title">My Work <em>Experience</em></h2>
+      <p class="section-sub">Changelog from my journey</p>
+      <div class="timeline">
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-year mono">2024</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Full-Stack Software Engineer</h3>
+            <p class="timeline-company">Independent / Freelance</p>
+            <ul class="timeline-points">
+              <li>Built and deployed 3 production web and mobile applications serving real users.</li>
+              <li>Integrated the Anthropic Claude API into a production SaaS product with JWT auth, rate limiting, and multi-tenant data isolation.</li>
+              <li>Developed an offline-first React Native app with full cross-platform support across iOS, Android, and PWA.</li>
+              <li>Designed and maintained PostgreSQL databases with Prisma ORM and complete user data isolation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-year mono">2023</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Frontend Developer</h3>
+            <p class="timeline-company">Contract Projects</p>
+            <ul class="timeline-points">
+              <li>Built responsive, accessible web interfaces using React and Tailwind CSS.</li>
+              <li>Translated Figma mockups into pixel-perfect, interactive implementations.</li>
+              <li>Delivered REST API integrations and client-side state management using modern patterns.</li>
+              <li>Optimised performance across multiple web projects, improving load times significantly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-animate>
+          <div class="timeline-year mono">2021</div>
+          <div class="timeline-content">
+            <h3 class="timeline-role">Junior Web Developer</h3>
+            <p class="timeline-company">Self-directed Learning &amp; Projects</p>
+            <ul class="timeline-points">
+              <li>Built full-stack projects using HTML, CSS, JavaScript, and Python/Flask.</li>
+              <li>Designed and implemented relational database schemas using SQLite and PostgreSQL.</li>
+              <li>Developed secure authentication systems with password hashing and session management.</li>
+              <li>Completed CS fundamentals covering algorithms, data structures, and software design.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section approach-section">
+    <div class="container">
+      <h2 class="section-title">My <em>Approach</em></h2>
+      <div class="approach-grid">
+
+        <div class="approach-card" data-animate>
+          <div class="approach-phase mono">Phase 1</div>
+          <h3>Planning &amp; Strategy</h3>
+          <p>
+            We discuss your vision, goals, and requirements. I analyse your needs and
+            create a comprehensive plan to bring your ideas to life with the best
+            technical approach.
+          </p>
+        </div>
+
+        <div class="approach-card" data-animate>
+          <div class="approach-phase mono">Phase 2</div>
+          <h3>Development &amp; Progress Updates</h3>
+          <p>
+            Once we agree on the plan, I dive into building. From initial architecture
+            to polished, tested code — I keep you updated every step of the way with
+            regular progress reports.
+          </p>
+        </div>
+
+        <div class="approach-card" data-animate>
+          <div class="approach-phase mono">Phase 3</div>
+          <h3>Deployment &amp; Launch</h3>
+          <p>
+            After thorough testing and your approval, I deploy your project to
+            production. I ensure everything runs smoothly and provide support
+            through the launch phase.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSION -->
+  <section class="section passion-section">
+    <div class="container">
+      <div class="passion-grid">
+        <div class="passion-visual" data-animate>
+          <div class="passion-code-block">
+            <span class="passion-word passion-w1 mono">&lt;code/&gt;</span>
+            <span class="passion-word passion-w2 mono">{ creativity }</span>
+            <span class="passion-word passion-w3 mono">innovation()</span>
+            <span class="passion-word passion-w4 mono">#passion</span>
+            <span class="passion-word passion-w5 mono">build()</span>
+            <span class="passion-word passion-w6 mono">ship.it</span>
+            <div class="passion-glow"></div>
+          </div>
+        </div>
+        <div class="passion-content" data-animate>
+          <h2 class="section-title">My Passion <em>for Coding</em></h2>
+          <p>
+            Programming is more than just a profession for me — it's a genuine passion.
+            I love solving complex problems and building innovative solutions through code.
+            There's nothing more satisfying than shipping something real that people actually use.
+          </p>
+          <p>
+            Constantly learning and experimenting with new technologies keeps me motivated
+            and enables me to sharpen my skills every day. Whether it's integrating AI,
+            building offline-first mobile apps, or designing secure backend systems — I
+            show up fully to every challenge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-inner" data-animate>
+        <h2>Ready to take your digital presence <em>to the next level?</em></h2>
+        <p>Reach out today and let's discuss how I can help you achieve your goals.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Let's get in touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo">GO<span class="accent-dot">.</span></a>
+        <div class="footer-links">
+          <a href="https://github.com/osuntoyinbogbenga" target="_blank" rel="noopener" class="mono">GitHub ↗</a>
+          <a href="mailto:osuntoyinbogbenga@gmail.com" class="mono">Email ↗</a>
+        </div>
+        <p class="footer-copy mono">© 2026 Gbenga Osuntoyinbo. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
