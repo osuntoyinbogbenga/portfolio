@@ -442,3 +442,12 @@ ul{list-style:none;}
 .project-card:hover .project-preview-img img {
   transform: scale(1.04);
 }
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+  .hero-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+  }
+}
