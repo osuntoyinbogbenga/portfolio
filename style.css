@@ -485,3 +485,30 @@ ul{list-style:none;}
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}
   #heroCanvas{display:none;}
 }
+/* Nav — centered pill only, no logo, like Marcel */
+.nav {
+  justify-content: center;
+}
+
+.nav-logo {
+  display: none;
+}
+
+.nav-links {
+  gap: 1.25rem !important;
+  padding: 0.5rem 1.25rem !important;
+}
+
+.nav-link {
+  font-size: 0.75rem !important;
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 0.75rem !important;
+    padding: 0.45rem 0.9rem !important;
+  }
+  .nav-link {
+    font-size: 0.68rem !important;
+  }
+}
